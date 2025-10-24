@@ -4,3 +4,7 @@ python-dotenv
 yfinance
 vaderSentiment
 joblib
+numpy
+scikit-learn
+matplotlib
+seaborn
