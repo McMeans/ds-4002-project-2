@@ -43,12 +43,15 @@ ds-4002-project-2
 ├── LICENSE.md ... MIT open-source license
 │
 ├── data/
-│   ├── <ticker> (for each)
+│   ├── <ticker>/ (for each)
 │   ├──── <ticker>_tweets_raw.csv ... Tweets collected for that stock
 │   ├──── <ticker>_market_raw.csv ... Historical price data from yfinance
 │   ├──── <ticker>_tweets_clean.csv . Cleaned tweets for EDA
 │   ├──── <ticker>_market_clean.csv . Cleaned price data for EDA
-│   └──── <ticker>_sentiment.csv .... Historical price data from yfinance
+│   ├──── <ticker>_sentiment.csv .... Historical price data from yfinance
+│   ├── README.md ................... Metadata
+│   ├── eda_plot1.png ............... Plot for metadata
+│   └── eda_plot2.png ............... Plot for metadata
 │
 ├── scripts/
 │   ├── stock_data_retrieval.ipynb ... Collects raw price data

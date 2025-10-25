@@ -29,10 +29,20 @@ Both sources adhere to their respective Terms of Service, and all analyses are c
 | Variable Name      | Short Description                                                        | Example Values                                      |
 |--------------------|--------------------------------------------------------------------------|-----------------------------------------------------|
 | text               | Text content of the tweet mentioning the stock                           | “Is owning $AAPL the best AI play?”                 |
-| created_at         | Date and time the tweet was posted                                       | 2024-09-02 23:16:28+00:00                           |
+| created_at         | Date and time the tweet was posted                                       | 2024-09-02                                          |
 | like_count         | Number of likes the tweet received                                       | 42                                                  |
 | retweet_count      | Number of times the tweet was reposted                                   | 12                                                  |
 | sentiment_score    | Computed sentiment score using VADER (-1 to +1)                          | 0.68                                                |
+
+**Sentiment Dataset (per stock ticker)**
+| Variable Name      | Short Description                                                        | Example Values                                      |
+|--------------------|--------------------------------------------------------------------------|-----------------------------------------------------|
+| date               | The trading day for a given stock (datetime)                             | 2024-09-05                                          |
+| average_sentiment  | The average sentiment score for the tweets on that day                   | 0.237484                                            |
+| close              | Closing stock price of the day                                           | 155.02                                              |
+| open               | Opening stock price of the NEXT day                                      | 152.30                                              |
+| price_difference   | The difference between the closing and opening                           | -3.79                                               |
+
 
 **Ethical Considerations:**
 - All tweet data originates from publicly available posts, compliant with X’s Terms of Service.
@@ -47,9 +57,9 @@ We want to understand how people’s tone and opinions about companies on X can 
 **Exploratory Plots:**
 
 1. Average Daily Sentiment vs Stock Price Change (e.g., $AAPL) 
-   ![](../../output/AAPL/image1.png)
+   ![](eda_plot1.png)
 2. Tweet Volume vs Daily Volatility 
-   ![](../../output/AAPL/image2.png)
+   ![](eda_plot2.png)
 
 
 ## References
