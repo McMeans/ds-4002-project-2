@@ -23,7 +23,6 @@ Both sources adhere to their respective Terms of Service, and all analyses are c
 | date               | The trading day for a given stock (datetime)                             | 2024-09-05                                          |
 | open               | Opening stock price of the day                                           | 152.30                                              |
 | close              | Closing stock price of the day                                           | 155.02                                              |
-| trend_label        | Binary classification of price change (1 = price up, 0 = price down)     | 1                                                   |
 
 **Tweet Dataset (per stock ticker)**
 | Variable Name      | Short Description                                                        | Example Values                                      |
@@ -32,7 +31,6 @@ Both sources adhere to their respective Terms of Service, and all analyses are c
 | created_at         | Date and time the tweet was posted                                       | 2024-09-02                                          |
 | like_count         | Number of likes the tweet received                                       | 42                                                  |
 | retweet_count      | Number of times the tweet was reposted                                   | 12                                                  |
-| sentiment_score    | Computed sentiment score using VADER (-1 to +1)                          | 0.68                                                |
 
 **Sentiment Dataset (per stock ticker)**
 | Variable Name      | Short Description                                                        | Example Values                                      |
@@ -67,4 +65,5 @@ We want to understand how people’s tone and opinions about companies on X can 
 [1] TwitterAPI.io, “Twitter API — Real-time and historical social data,” TwitterAPI.io. [Online]. Available: https://twitterapi.io/. [Accessed: Oct. 17, 2025].
 [2] Yfinance, “yfinance: Yahoo! Finance market data downloader,” PyPI, 2025. [Online]. Available: https://pypi.org/project/yfinance/. [Accessed: Oct. 17, 2025].
 [3] C. Hutto and E. Gilbert, “VADER: Valence Aware Dictionary and Sentiment Reasoner,” PyPI, 2025. [Online]. Available: https://pypi.org/project/vaderSentiment/. [Accessed: Oct. 10, 2025].
+
 [4] P. R. de Lima, T. R. da Silva, and L. Pereira, “Twitter sentiment and stock market movements: The predictive power of social media,” Centre for Economic Policy Research (CEPR), VoxEU Column, 2020. [Online]. Available: https://cepr.org/voxeu/columns/twitter-sentiment-and-stock-market-movements-predictive-power-social-media. [Accessed: Oct. 10, 2025].
